@@ -23,16 +23,19 @@ f. Converted categorical variables into numeric features using pd.get_dummies().
 3. Splitting Data:
 
 a. Split the preprocessed data into feature (X) and target (y) arrays, assuming a target variable (e.g., IS_SUCCESSFUL).
+
 b. Further split the data into training and testing sets using train_test_split.
 
 4. Model Creation and Compilation:
 
 a. Defined a sequential neural network model with TensorFlow/Keras, specifying the number of input features, hidden nodes for each layer, and the activation functions.
+
 b. Compiled the model with an optimizer (adam), a loss function (binary_crossentropy), and metrics (accuracy).
 
 5. Model Training:
 
 a. Trained the model on the training data, specifying the number of epochs, batch size, and validation split.
+
 b. Addressed a potential ValueError related to data type conversion by ensuring all input data is converted to float32.
 
 6. Model Saving:
