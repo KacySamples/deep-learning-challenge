@@ -9,10 +9,15 @@ Module21Challenge
 2: Data Preprocessing:
 
 a. Loaded a dataset (charity_data.csv) into a pandas DataFrame and displayed its first few rows.
+
 b. Dropped non-beneficial ID columns (EIN and NAME) from the DataFrame.
+
 c. Determined the number of unique values in each column to identify categorical variables for encoding.
+
 d. Examined the APPLICATION_TYPE and CLASSIFICATION columns for value counts to identify values for binning.
+
 e. Binned rare values in APPLICATION_TYPE and CLASSIFICATION into an "Other" category based on a chosen cutoff value.
+
 f. Converted categorical variables into numeric features using pd.get_dummies().
 
 3. Splitting Data:
